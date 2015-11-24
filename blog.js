@@ -34,14 +34,6 @@ exports.bloghome = function(req, res) {
     } else {
       var page = currentPage(req);
       var options = {
-        'fetchLinks' : [
-          'post.date',
-          'category.name',
-          'author.full_name',
-          'author.first_name',
-          'author.surname',
-          'author.company'
-        ],
         'page' : page,
         'orderings' :'[my.post.date desc]'
       };
